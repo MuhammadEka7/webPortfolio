@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-green block py-6">Eka Darma</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-green">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-green">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#sertifikat" class="text-base text-dark py-2 mx-8 flex group-hover:text-green">Sertifikat</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-green">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- home section start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-green md:text-xl">Halo Teman-Teman 👍, Saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Muhammad Eka Darma Putra</span></h1>
+                    <h2 class="font-medium text-slate text-lg mb-5 lg:text-2xl">Web Developer & <span class="text-dark">Back-End Developer</span></h2>
+                    <p class="font-medium text-slate mb-10 leading-relaxed">masih belajar puh, <span class="text-dark font-bold">sepuh!</span></p>
+
+                    <a href="#contact" class="text-base font-semibold text-white bg-green py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <img src="dist/img/wikrama-logo.png" alt="wikrama-logo" class="max-w-full mx-auto" width="500" height="500">
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:sclae-125"><svg width="200" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#84cc16" d="M55.3,-36.7C64,-17,57.9,6.4,46.2,26C34.5,45.6,17.3,61.3,-2.1,62.5C-21.4,63.6,-42.8,50.3,-53.7,31.2C-64.6,12.1,-65.1,-12.9,-54.4,-33.8C-43.7,-54.7,-21.9,-71.5,0.8,-72C23.4,-72.4,46.7,-56.4,55.3,-36.7Z" transform="translate(100 100) scale(1.2)" />
+                          </svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- portfolio section start -->
+    <section id="portfolio" class="pt-36 pb-16 bg-slay">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-green mb-2">Portfolio</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Project Terbaru</h2>
+                    <p class="font-medium text-md text-slate md:text-lg">berikut ini adalah proyek yang telah saya selesaikan</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portfolio/1.png" alt="Inventaris" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Inventaris</h3>
+                    <p class="font-medium text-base text-slate">Membuat Inventaris perpustakaan menggunakan PHP MVC untuk mengetahui siapa saja yang meminjam alat / barang di perpustakaan</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portfolio/2.png" alt="Apotek App" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Apotek App</h3>
+                    <p class="font-medium text-base text-slate">Membuat Apotek App menggunakan Laravel untuk </p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portfolio/3.png" alt="Profil Sekolah Wikrama" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Profil SMK Wikrama Bogor</h3>
+                    <p class="font-medium text-base text-slate">Membuat Projek Profil SMK WIKRAMA Bogor menggunakan HTML & CSS untuk mengetahui SMK WIKRAMA Bogor</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portfolio/4.png" alt="Weather App" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Weather App</h3>
+                    <p class="font-medium text-base text-slate">Membuat Projek Weather App menggunakan HTML, CSS & Bootstrap untuk mengetahui cuaca</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- blog section start -->
+    <section id="sertifikat" class="pt-36 pb-32 bg-abu ">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h2 class="font-bold text-dark text-3xl mb-3 sm:text-4xl lg:text-5xl">Sertifikat</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Berikut ini adalah sertifikat yang telah saya raih</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center flex-wrap">
+                <button class="prev text-4xl">⬅️</button>
+                <div class="w-full flex px-4 sm:w-1/2 md:w-1/2 xl:w-1/2">
+                        <div class="w-full overflow-hidden justify-center slider-container">
+                            <div class="flex transition ease-in-out slider-wrapper">
+                              <div class="min-w-full box-border slide"><img src="dist/img/certificate/dicoding1.png"></div>
+                              <div class="min-w-full box-border slide"><img src="dist/img/certificate/dicoding2.png"></div>
+                              <div class="min-w-full box-border slide"><img src="dist/img/certificate/dicoding4.png"></div>
+                              <div class="min-w-full box-border slide"><img src="dist/img/certificate/dqlab3.png"></div>
+                              <div class="min-w-full box-border slide"><img src="dist/img/certificate/dqlab.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                <button class="next text-4xl">➡️</button>
+            </div>
+        </div>
+    </section>
+    <!-- blog section end -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="w-full px-4">
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h4 class="font-semibold text-lg text-green mb-2">Contact</h4>
+                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
+                        <p class="font-medium text-md text-slate md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia sequi debitis iusto nobis vitae exercitationem asperiores amet eligendi dicta molestiae.</p>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="text-base font-bold text-green">Nama</label>
+                        <input type="text" id="name" class="w-full bg-abu text-dark p-3 roounded-md focus:outline-none focus:ring-green focus:ring-1 focus:border-green">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="text-base font-bold text-green">Email</label>
+                        <input type="email" id="email" class="w-full bg-abu text-dark p-3 roounded-md focus:outline-none focus:ring-green focus:ring-1 focus:border-green">
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="text-base font-bold text-green">Pesan</label>
+                        <textarea type="email" id="email" class="w-full bg-abu text-dark p-3 roounded-md focus:outline-none focus:ring-green focus:ring-1 focus:border-green h-32"></textarea>
+                    </div>
+                    <div class="w-full">
+                        <button class="text-base font-semibold text-white bg-green py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                    </div>
+                </div>  
+            </form>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
